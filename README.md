@@ -77,15 +77,6 @@ story/
    - Deletes a book by its ID.
 
 ---
-
-## Demo Video
-
-Watch the demo of the system:  
-<video controls width="600">
-  <source src="Screen%20Recording%202025-01-07%20232402.mp4" type="video/mp4">
-  Your browser does not support the video tag. [Download the video](Screen%20Recording%202025-01-07%20232402.mp4).
-</video>
-
 ---
 
 ## Attached Images
