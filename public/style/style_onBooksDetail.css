@@ -1,0 +1,125 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container to wrap all content */
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+/* Header styling */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #555;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+/* Paragraph and table styling */
+p {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd; /* Add border to the whole table */
+}
+
+/* Table Header */
+th {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid #ddd; /* Border for table headers */
+}
+
+/* Table Data */
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Add border at the bottom of each cell */
+    border-right: 1px solid #ddd; /* Add border at the right side of each cell */
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+/* Zebra-stripe effect for rows */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* "Not Returned" text */
+td:contains('Not Returned') {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Logout link styling */
+a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+}

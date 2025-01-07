@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Library Management System</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #eceff1, #ffffff);
+      color: #495057;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+   
+    h1 {
+      font-size: 36px;
+      color: #3498db;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px; 
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      padding: 20px;
+    }
+
+   
+    .login-container {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      margin: 15px;
+      text-align: center;
+    }
+
+
+    input {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+      transition: all 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #3498db;
+      outline: none;
+      box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+    }
+
+   
+    button {
+      width: 100%;
+      padding: 12px 20px;
+      background: #3498db;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background: #2980b9;
+      transform: scale(1.05);
+    }
+
+    
+    .error {
+      color: #e74c3c;
+      font-size: 14px;
+      margin-top: 10px;
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .login-container {
+        width: 90%;
+        max-width: 350px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      input, button {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>LOGIN PAGE</h1>
+  <div class="container">
+    <div class="login-container">
+      <h1>User Login</h1>
+      <form id="loginForm" action="/login" method="post">
+        <input type="email" name="email" placeholder="Email" required />
+        <button type="submit">Login</button>
+        <div class="error" id="errorMessage"></div>
+      </form>
+    </div>
+    <div class="login-container">
+      <h1>Admin Login</h1>
+      <form id="loginForm" action="/admin_login" method="post">
+        <input type="email" name="email" placeholder="UserName" required />
+        <input type="password" name="password" placeholder="password" required />
+        <button type="submit">Login</button>
+        <div class="error" id="errorMessage"></div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

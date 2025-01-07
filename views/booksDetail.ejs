@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Book Information</title>
+    <link rel="stylesheet" href="./style/style_onBooksDetail.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, <%= user.name %>!</h1>
+        <p>Email: <%= user.email %></p>
+        <p>Phone: <%= user.phone %></p>
+
+        <h2>Your Borrowed Books</h2>
+        <% if (books.length > 0) { %>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Title</th>
+                        <th>Author</th>
+                        <th>Borrow Date</th>
+                        <th>Return Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% books.forEach(book => { %>
+                        <tr>
+                            <td><%= book.title %></td>
+                            <td><%= book.author %></td>
+                            <td><%= book.borrow_date %></td>
+                            <td><%= book.return_date ? book.return_date : 'Not Returned' %></td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        <% } else { %>
+            <p>You have no borrowed books.</p>
+        <% } %>
+
+        <a href="/">Logout</a>
+    </div>
+</body>
+</html>
