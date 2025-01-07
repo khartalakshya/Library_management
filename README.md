@@ -1,4 +1,5 @@
 # Project Documentation
+# ALL DOCUMENTATION IS PRESENT IN BELOW PDF |
 
 all the Documentation is available in this  below pdf please do  read it.
 
@@ -76,35 +77,6 @@ story/
 3. **`/books/delete/:id` (POST)**  
    - Deletes a book by its ID.
 
----
----
-
-## Attached Images
-
-Below are the images included in the original documentation:
-
-### Home Page
-![Home Page](assets/images/home_page.png)
-
-### Login Page
-![Login Page](assets/images/login_page.png)
-
-### Return and Borrow Books Page
-![Return and Borrow Books](assets/images/return_borrow_page.png)
-
-### Add and Delete Books Page
-![Add and Delete Books](assets/images/add_delete_page.png)
-
----
-
-## Future Enhancements
-
-- Implement user authentication for admin access.
-- Add pagination for managing large datasets.
-- Enable search functionality to filter books by title or author.
-- Include an edit feature for updating book details.
-
----
 
 ## Conclusion
 
