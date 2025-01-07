@@ -7,7 +7,7 @@ all the Documentation is available in this  below pdf please do  read it.
 
 ## Video Tutorial
 
-You can watch the video tutorial here:
+You can watch the video Demo here:
 
 [Watch Video](Screen%20Recording%202025-01-08%20002042.mp4)
 
