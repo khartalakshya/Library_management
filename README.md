@@ -1,6 +1,6 @@
 # Project Documentation
 
-all the Dcumentaion is avalable in this pdf  do  read it.
+all the Dcumentation is available in this  below pdf please do  read it.
 
 [View PDF Document](README/Books%20Management%20System.pdf)
 
