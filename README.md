@@ -1,6 +1,6 @@
 # Project Documentation
 
-all the Dcumentation is available in this  below pdf please do  read it.
+all the Documentation is available in this  below pdf please do  read it.
 
 [View PDF Document](README/Books%20Management%20System.pdf)
 
@@ -17,8 +17,7 @@ You can watch the video tutorial here:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/khartalakshya/story.git
-cd story
+git clone https://github.com/khartalakshya/Library_management
 ```
 
 ### Install Dependencies
